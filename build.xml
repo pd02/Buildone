@@ -1,0 +1,25 @@
+
+<project name= "javaproject" default="compile">
+
+
+	<target name="clean">
+		<delete dir="bin" />
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir ="bin/test"/>
+	</target>
+
+	<target name="compile" depends="init" >
+		<javac srcdir="src/Pradeep" destdir="bin/test" />
+	</target>
+	
+	<!--
+	<target name="jar" depends="compile" >
+		<jar destdir="bin/Pradeep/jar/test.jar" basedir="bin/Pradeep/classes" />
+	</target>
+	-->
+</project>
+	
+	
+	
